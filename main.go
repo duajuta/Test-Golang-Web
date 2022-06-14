@@ -25,7 +25,7 @@ func main() {
 	})
 
 	http.HandleFunc("/member", func(w http.ResponseWriter, r *http.Request) {
-		var data = M{"title": "Belajar Golang Web",
+		var data = M{"title": "Table HTML Golang Web",
 			"name": "Wawin Fauzani"}
 		err = tmpl.ExecuteTemplate(w, "member", data)
 		if err != nil {
